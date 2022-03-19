@@ -1,0 +1,171 @@
+.totalBG {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contentBg {
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto';
+  padding: 20px;
+}
+.inputImageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 768px) {
+  .inputContainer {
+    align-self: center;
+  }
+}
+.inputNameCss {
+  width: 350px;
+  height: 45px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 5px;
+  border-color: #171f46;
+  border-style: solid;
+  border-width: 1px;
+}
+.inputDateCss {
+  width: 350px;
+  height: 45px;
+  font-size: 20px;
+  font-family: 'Roboto';
+  padding: 9px;
+  border-radius: 5px;
+  border-color: #171f46;
+  border-style: solid;
+  border-width: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .inputNameCss {
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .inputDateCss {
+    width: 250px;
+    height: 35px;
+    font-size: 14px;
+  }
+  .heading {
+    font-size: 24px;
+  }
+}
+
+.inputLabel {
+  color: #b5b7c4;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+.dateLabel {
+  color: #b5b7c4;
+  font-size: 16px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 4px;
+}
+@media screen and (max-width: 768px) {
+  .inputLabel {
+    font-size: 13px;
+  }
+  .dateLabel {
+    font-size: 13px;
+  }
+}
+.addButton {
+  background-color: #8b5cf6;
+  border-radius: 8px;
+  width: 70px;
+  height: 35px;
+  color: #ffffff;
+  margin-top: 20px;
+  outline: none;
+  border-width: 0px;
+  cursor: pointer;
+}
+.line {
+  border: 1px solid #b5b7c4;
+  width: 100%;
+  margin-top: 30px;
+}
+.appImage {
+  width: 40%;
+}
+@media screen and (max-width: 768px) {
+  .appImage {
+    display: none;
+  }
+  .contentBg {
+    max-width: 550px;
+  }
+}
+.appointmentsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.appHeadingStarred {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.starredButton {
+  background-color: transparent;
+  border: 1px solid #8b5cf6;
+  color: #8b5cf6;
+  border-radius: 20px;
+  height: 30px;
+  width: 83px;
+  font-family: Roboto;
+  font-weight: bold;
+  align-self: center;
+  font-size: 15px;
+}
+.heading2 {
+  font-size: 25px;
+}
+.appointmentsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .appointmentsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+li,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}

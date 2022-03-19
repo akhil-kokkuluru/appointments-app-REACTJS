@@ -1,0 +1,49 @@
+.appointment {
+  width: 30%;
+  border: 1px solid #b5b7c4;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 768px) {
+  .appointment {
+    width: 90%;
+    margin-bottom: 15px;
+    margin-right: none;
+  }
+}
+.nameStar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.nameing {
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: Bold;
+  color: #171f46;
+}
+.datecss {
+  font-size: 13px;
+  font-family: 'Roboto';
+  color: #b5b7c4;
+  font-weight: bold;
+}
+li,
+ul {
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+.imgButton {
+  background-color: transparent;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
