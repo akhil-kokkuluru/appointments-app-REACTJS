@@ -34,6 +34,25 @@ class Appointments extends Component {
     }))
   }
 
+  onclickingStar = id => {
+    this.setState(prevValue => ({
+      appointmentList: prevValue.appointmentList.map(item => {
+        if (id === item.id) {
+          return {...item, isFavourite: !item.isFavourite}
+        }
+        return item
+      }),
+    }))
+  }
+
+  onFiltering = () => {
+    this.setState(prevValue => ({
+      appointmentList: prevValue.appointmentList.filter(
+        item => item.isFavourite === true,
+      ),
+    }))
+  }
+
   render() {
     const {titleName, dateValue, appointmentList} = this.state
     return (
@@ -77,13 +96,20 @@ class Appointments extends Component {
           <div className="appointmentsContainer">
             <div className="appHeadingStarred">
               <h1 className="heading2">Appointments</h1>
-              <button type="button" className="starredButton">
+              <button
+                type="button"
+                className="starredButton"
+                onClick={this.onFiltering}
+              >
                 Starred
               </button>
             </div>
             <ul className="appointmentsContainer">
               {appointmentList.map(item => (
-                <AppointmentItem appointmentList={item} />
+                <AppointmentItem
+                  appointmentList={item}
+                  onclickingStar={this.onclickingStar}
+                />
               ))}
             </ul>
           </div>
